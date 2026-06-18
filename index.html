@@ -15,7 +15,7 @@
         <p>Bem-vindo à nossa pesquisa online!</p>
         <form action="" method="get">
             <!-- Dados Pessoais: -->
-            <fieldset>
+            <!--<fieldset>
                 <legend>Dados Pessoais</legend>
                 <label for="username">Nome:</label>
                 <input type="text" name="username" placeholder="Digite seu nome" required>
@@ -35,6 +35,64 @@
                 <br>
                 <label for="userPhoto">Upload de Foto:</label>
                 <input type="file" accept="image/*" name="userImage" id="userPhoto" required>
+            </fieldset>-->
+            <!-- Perfil -->
+            <fieldset>
+                <legend>Perfil</legend>
+                <p>Gênero:</p>
+                <input type="radio" name="userGender" id="userGender" value="Feminino">
+                <label for="userGender">Feminino</label>
+                <input type="radio" name="userGender" id="userGender" value="Masculino">
+                <label for="userGender">Masculino</label>
+                <input type="radio" name="userGender" id="userGender" value="notInformed">
+                <label for="userGender">Prefiro não informar</label>
+                <br>
+                <br>
+                <label for="maritalstatus">Estado Civil:</label>
+                <select name="maritalstatus" id="maritalstatus">
+                    <option value="">Selecione seu estado civil</option>
+                    <option value="solteiro">Solteiro(a)</option>
+                    <option value="casado">Casado(a)</option>
+                    <option value="divorciado">Divorciado(a)</option>
+                    <option value="viuvo">Viuvo(a)</option>
+                </select>
+                <br>
+                <br>
+                <label for="state">Estado:</label>
+                <select name="state" id="state">
+                    <option value="">Selecione seu estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+                <br>
+                <br>
+                <label for="city">Cidade:</label>
+                <input type="text" name="city" placeholder="Digite sua cidade">
             </fieldset>
             <button type="submit">Enviar</button>
         </form>
