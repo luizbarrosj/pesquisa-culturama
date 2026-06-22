@@ -37,7 +37,7 @@
                 <input type="file" accept="image/*" name="userImage" id="userPhoto" required>
             </fieldset>-->
             <!-- Perfil -->
-            <fieldset>
+            <!--<fieldset>
                 <legend>Perfil</legend>
                 <p>Gênero:</p>
                 <input type="radio" name="userGender" id="userGender" value="Feminino">
@@ -59,7 +59,7 @@
                 <br>
                 <br>
                 <label for="state">Estado:</label>
-                <select name="state" id="state">
+                <select name="state" id="state" required>
                     <option value="">Selecione seu estado</option>
                     <option value="AC">Acre</option>
                     <option value="AL">Alagoas</option>
@@ -93,6 +93,16 @@
                 <br>
                 <label for="city">Cidade:</label>
                 <input type="text" name="city" placeholder="Digite sua cidade">
+            </fieldset>-->
+            <fieldset>
+                <legend>Hábitos</legend>
+                <p>Redes Sociais</p>
+                <input type="checkbox" name="userSocial" id="userHabits" value="instagram">
+                <label for="userHabits">Instagram</label>
+                <input type="checkbox" name="userSocial" id="userHabits2" value="facebook">
+                <label for="userHabits2">Facebook</label>
+                <input type="checkbox" name="userSocial" id="userHabits3" value="twitter">
+                <label for="userHabits3">Twitter</label>
             </fieldset>
             <button type="submit">Enviar</button>
         </form>
