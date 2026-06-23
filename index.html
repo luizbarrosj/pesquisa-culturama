@@ -15,7 +15,7 @@
         <p>Bem-vindo à nossa pesquisa online!</p>
         <form action="" method="get">
             <!-- Dados Pessoais: -->
-            <!--<fieldset>
+            <fieldset>
                 <legend>Dados Pessoais</legend>
                 <label for="username">Nome:</label>
                 <input type="text" name="username" placeholder="Digite seu nome" required>
@@ -35,9 +35,9 @@
                 <br>
                 <label for="userPhoto">Upload de Foto:</label>
                 <input type="file" accept="image/*" name="userImage" id="userPhoto" required>
-            </fieldset>-->
+            </fieldset>
             <!-- Perfil -->
-            <!--<fieldset>
+            <fieldset>
                 <legend>Perfil</legend>
                 <p>Gênero:</p>
                 <input type="radio" name="userGender" id="userGender" value="Feminino">
@@ -93,7 +93,7 @@
                 <br>
                 <label for="city">Cidade:</label>
                 <input type="text" name="city" placeholder="Digite sua cidade">
-            </fieldset>-->
+            </fieldset>
             <fieldset>
                 <legend>Hábitos</legend>
                 <p>Redes Sociais</p>
@@ -120,21 +120,30 @@
                 <input type="color" name="favoriteColor" id="favoriteColor" value="#000000">
                 <label for="favoriteColor">Cor Favorita</label>
                 <br>
+                <br>
                 <label for="userRating">Avaliação do Site:</label>
-                <input type="radio" name="userRating" id="rating1" value="1">
-                <label for="rating1">bom</label>
-                <input type="radio" name="userRating" id="rating2" value="2">
-                <label for="rating2">regular</label>
+                <input type="radio" name="userRating" id="rating1" value="5">
+                <label for="rating1">excelente</label>
+                <input type="radio" name="userRating" id="rating2" value="4">
+                <label for="rating2">bom</label>
                 <input type="radio" name="userRating" id="rating3" value="3">
-                <label for="rating3">ruim</label>
-                <input type="radio" name="userRating" id="rating4" value="4">
-                <label for="rating4">péssimo</label>
-                <input type="radio" name="userRating" id="rating5" value="5">
-                <label for="rating5">excelente</label>
+                <label for="rating3">regular</label>
+                <input type="radio" name="userRating" id="rating4" value="2">
+                <label for="rating4">ruim</label>
+                <input type="radio" name="userRating" id="rating5" value="1">
+                <label for="rating5">péssimo</label>
                 <br>
                 <br>
                 <textarea name="userComments" id="userComments" cols="80" rows="5"
                     placeholder="Deixe seus comentários sobre o site"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Confirmações</legend>
+                <input type="checkbox" name="userConsent" id="userLGDPTerm" value="consent" required>
+                <label for="userLGDPTerm">Eu aceito Participar da pesquisa</label>
+                <br>
+                <input type="checkbox" name="userConsent" id="userLGDPTerm2" value="consent">
+                <label for="userLGDPTerm2">Desejo receber informações sobre a pesquisa por email</label>
             </fieldset>
             <button type="submit">Enviar</button>
         </form>
