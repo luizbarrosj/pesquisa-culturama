@@ -22,6 +22,11 @@ header {
     margin-bottom: 20px;
 }
 
+img {
+
+    width: 100px;
+}
+
 h1 {
 
     font-family: 'Fjalla One', sans-serif;
@@ -47,4 +52,38 @@ legend {
     font-size: 18px;
     padding: 0 5px;
 
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+input[type="color"] {
+    width: 100px;
+    height: 30px;
+    padding: 0 5px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
