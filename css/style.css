@@ -37,6 +37,7 @@ form {
     background-color: #ffffff;
     padding: 15px;
     border-radius: 10px;
+    margin-bottom: 100px;
 }
 
 fieldset {
@@ -86,4 +87,45 @@ label {
     display: inline-block;
     margin-bottom: 5px;
     font-weight: bold;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+    border-color: red;
+}
+
+
+
+input:valid,
+select:valid,
+textarea:valid {
+    border-color: green;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button[type="reset"] {
+    background-color: #aaabb6;
+}
+button[type="reset"]:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+button[type="submit"]:hover {
+    background-color: #96ff9c;
 }
