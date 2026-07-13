@@ -13,14 +13,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Pesquisa Culturama</title>
 </head>
 
 <body>
     <main>
         <header>
-            <img src="/img/logo-culturama.png" alt="Logo da Culturama" width="100">
+            <img src="./img/logo-culturama.png" alt="Logo da Culturama" width="100">
             <h1>Pesquisa Online</h1>
         </header>
         <section>
@@ -42,8 +42,11 @@
                     <input type="email" name="email" placeholder="Digite seu e-mail" required>
                     <br>
                     <label for="userPhoneNumber">Telefone:</label>
+
                     <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}"
-                        placeholder="Digite seu telefone (11 dígitos)">
+                        placeholder="Digite seu telefone (11 dígitos)" aria-describedby="phoneHelp" required>
+                    <small id="phoneHelp">Preencha com 11 dígitos no formato dd + 9 dígitos sem espaços ou
+                        hífens</small>
                     <br>
                     <label for="userPhoto">Upload de Foto:</label>
                     <input type="file" accept="image/*" name="userImage" id="userPhoto" required>
