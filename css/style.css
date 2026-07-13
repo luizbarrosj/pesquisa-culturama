@@ -83,7 +83,8 @@ input[type="color"] {
     margin-bottom: 20px;
 }
 
-input[type="tel"] {
+input[type="tel"],
+input[type="file"] {
     padding: 5px;
     margin-bottom: 0px;
 }

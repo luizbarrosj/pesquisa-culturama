@@ -49,7 +49,9 @@
                         hífens</small>
                     <br>
                     <label for="userPhoto">Upload de Foto:</label>
-                    <input type="file" accept="image/*" name="userImage" id="userPhoto" required>
+                    <input type="file" accept="image/*" name="userImage" id="userPhoto" aria-describedby="photoHelp"
+                        required>
+                    <small id="photoHelp">Escolha uma foto para enviar</small>
                 </fieldset>
                 <!-- Perfil -->
                 <fieldset>
